@@ -1,0 +1,77 @@
+name: Generate Michigan course cards
+
+on:
+  workflow_dispatch:
+
+env:
+  SHARDS: 8
+
+jobs:
+  prefetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Prefetch statewide OSM data + spatial join
+        working-directory: michigan
+        run: |
+          for i in 0 1 2 3 4 5 6 7; do
+            python batch_pipeline.py prefetch $i
+            sleep 8
+          done
+          python batch_pipeline.py join
+      - uses: actions/upload-artifact@v4
+        with:
+          name: joined
+          path: michigan/joined/
+          retention-days: 7
+
+  render:
+    needs: prefetch
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: joined
+          path: michigan/joined/
+      - name: Stagger shard start (Overpass etiquette)
+        run: sleep $(( 45 * ${{ matrix.shard }} ))
+      - name: Render shard ${{ matrix.shard }} of 8
+        working-directory: michigan
+        run: python batch_pipeline.py render --shard ${{ matrix.shard }} 8
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cards-shard-${{ matrix.shard }}
+          path: michigan/cards/
+          retention-days: 7
+
+  merge:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cards-shard-*
+          merge-multiple: true
+          path: cards/
+      - name: Count results
+        run: ls cards | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: michigan-cards
+          path: cards/
+          retention-days: 30

@@ -1,0 +1,817 @@
+osm_type,osm_id,name,lat,lon,holes_tag,fairways,hole_lines,tier
+way,23590783,Highland Golf Club,45.72796,-87.21801,,3,0,partial
+way,23592332,Escanaba Country Club,45.72978,-87.07462,,5,18,partial
+way,24686189,Riverside Country Club,45.11129,-87.64422,,6,18,partial
+way,25411699,Tecumseh Golf Club,42.01101,-83.92081,,0,18,partial
+way,25441012,Raisin Valley Golf Club,41.98277,-83.93931,,20,18,vector
+way,30479091,Mickey's Golf Range,42.30824,-83.41647,,0,0,raster
+way,31336134,Wawashkamo Golf Course,45.87014,-84.63458,,1,9,partial
+way,32730303,Eagle Eye Golf Club,42.7914,-84.49113,,8,17,partial
+way,34187934,Forest Akers West,42.70792,-84.49951,,15,18,vector
+way,34187936,Forest Akers East,42.70814,-84.48791,,16,18,vector
+way,34992865,Oak Crest Golf Course,45.77249,-87.91893,,0,18,partial
+way,35678344,Jewel Golf Course - Grand Nine,45.85082,-84.62276,,8,9,partial
+way,35678346,Jewel Golf Course - Woods Nine,45.86626,-84.64295,,8,9,partial
+way,37051386,Blackshire,44.51542,-83.37136,,21,18,vector
+way,40147274,Groesbeck Golf Course,42.74892,-84.5265,,18,18,vector
+way,40636138,Country Club of Lansing,42.71635,-84.5822,,6,18,partial
+way,40685148,Traverse City Golf and Country Club,44.74097,-85.62491,,6,18,partial
+way,42316957,Royal Oak Golf Club,42.52162,-83.17743,,3,9,partial
+way,45409549,Little Nugget Golf Course (Closed),45.27018,-87.61115,,0,0,raster
+way,45409777,North Shore Golf Club,45.1977,-87.54656,,0,0,raster
+way,45729609,Marquette Golf Club,46.53609,-87.42393,,12,18,vector
+way,55626886,Red Run Golf Club,42.50906,-83.1363,,14,18,vector
+way,72058860,Chandler Park Golf Course,42.39736,-82.97756,,2,18,partial
+way,80558515,Epworth Heights Golf Course,43.97502,-86.46146,,0,0,raster
+way,80558552,Lincoln Hills Golf Club,43.98745,-86.46546,,0,0,raster
+way,90966780,Arbor Hills Golf Club,42.22935,-84.48748,,0,0,raster
+way,90966835,Hickory Hills Golf Club,42.21966,-84.47961,,0,0,raster
+way,90970676,Cascades Golf Course,42.22286,-84.44263,,0,0,raster
+way,91744937,The Prairies Golf Club,42.29012,-85.65648,,17,0,vector
+way,93415738,Midland Country Club,43.62966,-84.24053,,14,18,vector
+way,93415742,Currie Municipal Golf Course,43.61938,-84.26401,,38,20,vector
+way,95490755,Sault Sainte Marie Country Club,46.48331,-84.30892,,18,18,vector
+way,96237731,Washtenaw Golf Club,42.24004,-83.65735,,22,18,vector
+way,111780073,Morrison Lake Golf Club,42.86958,-85.20098,,1,2,raster
+way,113063226,Tanglewood Marsh Golf Course,46.48059,-84.41331,,0,0,raster
+way,116041117,Radrick Farms Golf Course,42.28369,-83.65979,,20,18,vector
+way,127361321,Summit Golf Course,44.95328,-85.17991,,0,0,raster
+way,127540986,Pinecroft Golf Course,44.62855,-86.07387,,3,0,partial
+way,127700532,Meadowbrook Country Club,42.43498,-83.44733,,7,19,partial
+way,127841461,Lakes of Taylor Golf Club,42.20522,-83.27969,,12,18,vector
+way,128148930,Cracklewood Golf Club!,42.6903,-82.9448,,16,18,vector
+way,128640271,Huron Hills Golf Course,42.26876,-83.69561,,0,18,partial
+way,137414923,Leland Country Club,45.02457,-85.75147,,16,0,vector
+way,144905869,Elmbrook Golf Course,44.7097,-85.57103,,5,18,partial
+way,150518444,Litchfield Greens,42.05249,-84.77327,,0,0,raster
+way,150643926,Mill Race Golf Course,41.97448,-84.65951,,0,0,raster
+way,153301726,Tam O'Shanter Country Club,42.56231,-83.35424,,16,18,vector
+way,164516759,The Pines Golf Course,42.87453,-85.71866,,1,18,partial
+way,165355716,Beaver Island Golf Course,45.71394,-85.51072,,0,0,raster
+way,166984277,Grand Prarie Golf Course,42.31384,-85.63494,,0,0,raster
+way,173679255,Saginaw Country Club,43.41747,-84.00132,,11,10,vector
+way,173680956,Saginaw Country Club,43.41157,-84.003,,6,9,partial
+way,178180322,Four Lakes Country Club,41.79261,-86.00143,,10,18,vector
+way,178191915,Alwyn Downs Golf Club,42.25732,-84.95901,,0,0,raster
+way,179071774,Binder Park Golf Course,42.23663,-85.15532,,17,18,vector
+way,179465058,Eagle Crest Resort,42.22398,-83.61074,,9,18,vector
+way,180206578,Paw Paw Lake Golf Course,42.1968,-86.28144,,1,0,raster
+way,181222205,Manistee Golf & Country Club,44.23906,-86.3437,,19,18,vector
+way,192636848,The Meadows at Grand Valley State University,42.96785,-85.8984,,22,18,vector
+way,199425523,Lake Erie Metropark Golf Course,42.05748,-83.20069,,7,18,partial
+way,203185875,Dearborn Country Club,42.32,-83.25022,,2,0,raster
+way,207486587,Port Huron Golf Club,43.02959,-82.44595,,5,0,partial
+way,210059805,Oakland University Golf and Learning Center,42.6658,-83.20503,,22,36,vector
+way,210622679,The Polo Fields - Ann Arbor,42.27636,-83.82675,,5,1,partial
+way,223433963,Bedford Valley,42.40639,-85.21647,,0,18,partial
+way,224672296,Pierce Lake Golf Course and Park,42.29969,-84.01515,,18,18,vector
+way,224699325,Hudson Mills Metropark Golf Course,42.36136,-83.90683,,3,18,partial
+way,225268897,Elk Rapids Golf Club,44.90047,-85.39191,,1,9,partial
+way,225432757,Portage Lake Golf Course,47.09455,-88.52316,,17,0,vector
+way,226148435,Kent Country Club,42.99491,-85.65488,,22,18,vector
+way,230883117,Ridgeview Golf Course,43.06151,-85.24464,,0,0,raster
+way,230883603,Candlestone,43.10942,-85.2551,,0,0,raster
+way,232725914,Concord Hills Golf Course,42.15485,-84.63356,,7,18,partial
+way,232804042,Sylvan Glen Golf Course,42.60346,-83.13483,,23,19,vector
+way,234594667,Waabooz Run Golf Course,43.61428,-84.73462,,0,0,raster
+way,241726901,Thorne Hills Golf Course,42.06149,-83.48268,,0,0,raster
+way,242551475,The Oaks at Kincheloe,46.27455,-84.45976,,2,18,partial
+way,246089205,Dunes Golf Club,44.80457,-85.98405,,0,18,partial
+way,246833729,Mistwood Golf Course,44.7415,-85.87901,,28,27,vector
+way,249283115,Fruitport Golf Club,43.13964,-86.20091,,0,0,raster
+way,249283116,Oak Ridge Golf Club,43.12916,-86.25884,,0,18,partial
+way,253983500,DeMor Hills Golf Course,41.76394,-84.24726,,2,0,raster
+way,255688512,Lake Cora Hills,42.21305,-85.97463,,16,18,vector
+way,256307729,Lochmoor Club,42.43909,-82.89877,,21,1,vector
+way,257373609,Giant Oak Golf Club,41.79081,-83.57658,,4,27,partial
+way,257373611,Bedford Hills Golf Club,41.73253,-83.58461,,26,27,vector
+way,259254183,Monroe Golf & Country Club,41.94166,-83.3768,,3,18,partial
+way,259256128,Old Town Golf Course,41.97616,-83.37104,,0,0,raster
+way,259284429,Beeches Golf Club,42.38343,-86.19715,,0,0,raster
+way,259286591,Hawkshead Links Golf Course,42.4624,-86.2246,,21,18,vector
+way,259587258,Kalamazoo Country Club,42.25615,-85.60864,,17,18,vector
+way,259674856,Milham Park Golf Club,42.24871,-85.56735,,15,18,vector
+way,259715232,Green Valley Golf Course,41.77739,-85.45974,,4,0,partial
+way,260358553,Lenawee Country Club,41.91629,-84.07109,,1,0,raster
+way,260422127,Grand Beach Golf Course,41.77076,-86.79317,,0,9,partial
+way,261456431,Battle Creek Country Club,42.28011,-85.2089,,0,0,raster
+way,261968477,Solitude Links Golf Course & Banquet Center,42.98206,-82.56182,,4,18,partial
+way,263053740,Stonehedge North,42.37999,-85.33284,,5,18,partial
+way,263157552,Stonehedge South,42.37209,-85.33147,,6,18,partial
+way,263863413,Dearborn Hills,42.30299,-83.27467,,2,17,partial
+way,263921112,University of Michigan Golf Course,42.25855,-83.74527,,6,16,partial
+way,263921125,Ann Arbor Golf and Outing Club,42.26242,-83.74765,,4,2,partial
+way,263941636,Rouge Park Golf Course,42.37541,-83.25285,,19,18,vector
+way,264208339,Hickory Hill Golf Course,42.55386,-83.52091,,4,0,partial
+way,264304947,Saint John's Resort Golf Course,42.39336,-83.47517,,29,18,vector
+way,264831087,Northport Point Golf Club,45.15095,-85.56343,,0,0,raster
+way,265723972,Ridgeview Golf Course,42.29888,-85.7533,,0,0,raster
+way,265778472,Moors Golf Club,42.2073,-85.63056,,0,18,partial
+way,266321588,Macatawa Legends Golf & Country Club,42.85104,-86.13416,,6,18,partial
+way,266737253,Orchard Hill Country Club,41.83102,-86.32875,,16,18,vector
+way,266829149,Hickory Ridge Golf Course,42.29214,-85.4804,,0,0,raster
+way,266959648,Heritage Glen Golf Club,42.25708,-85.83641,,4,18,partial
+way,267414577,Grand Ledge Country Club,42.7299,-84.72492,,0,0,raster
+way,270271733,Stony Point Golf Course,45.93326,-86.28852,,0,0,raster
+way,270765266,Hessel Ridge Golf,46.03501,-84.43139,,0,0,raster
+way,272096798,Sunnybrook Country Club,42.88286,-85.79371,,15,18,vector
+way,273198178,Evergreen Hills Golf Course,42.47957,-83.23588,,2,9,partial
+way,274199300,Bay City Country Club,43.53014,-83.95022,,7,23,partial
+way,274352266,Newberry Country Club,46.30858,-85.51696,,0,0,raster
+way,274840974,Red Fox Run,46.34663,-87.37069,,0,1,raster
+way,275067507,Crystal View Golf Course,46.10256,-88.32203,,0,0,raster
+way,276155423,Fox Creek Golf Course,42.42968,-83.40211,,21,18,vector
+way,276776996,The Rock Golf Course,46.02261,-83.70899,,6,18,partial
+way,278140682,Beech Woods Golf Course,42.45019,-83.29527,,0,0,raster
+way,278671975,Munoscong Golf Club,46.19055,-84.35608,,0,1,raster
+way,279897697,Saint Ignace Golf & Country Club,45.85467,-84.74266,,1,9,partial
+way,280885631,Wawonowin Golf Course,46.48193,-87.7689,,18,18,vector
+way,281399420,Marquette Golf Club Greywalls,46.52581,-87.42642,,3,18,partial
+way,281565274,Mullenhurst Golf Course,42.56934,-85.4829,,0,0,raster
+way,281978710,Green Hills Golf Course,43.78604,-83.97731,,2,18,partial
+way,281978711,Huron Breeze Golf and Country Club,44.07394,-83.60552,,17,18,vector
+way,281978712,Huron Shores Golf Club & Restaurant,43.46937,-82.56246,,20,0,vector
+way,281978714,Maple Leaf Golf Course,43.74602,-83.98696,,24,9,vector
+way,281978715,Singing Bridge Golf Course,44.13936,-83.57524,,0,0,raster
+way,281978716,Spring Valley Golf Course,43.66955,-83.94443,,12,9,vector
+way,282129955,Pine Hills Golf Course,42.89421,-84.33578,,0,0,raster
+way,282331115,Gladstone Golf Club,45.89622,-87.03694,,0,0,raster
+way,282731284,Indian Lake Golf and Country Club,46.00658,-86.29645,,0,0,raster
+way,283511187,Sweetgrass Golf Club,45.69169,-87.34095,,15,18,vector
+way,283590153,Woody’s Run Public Golf Course,45.79953,-87.16715,,0,0,raster
+way,283892959,Indian Hills Golf Course,45.43335,-87.61743,,0,0,raster
+way,284666057,Marquette Trails Country Club,43.84705,-85.92332,,0,0,raster
+way,285977717,Pine Grove Country Club,45.82244,-88.09143,,2,18,partial
+way,286794005,Iron River Country Club,46.06933,-88.64626,,0,0,raster
+way,287510717,Coyote Golf Club,42.49485,-83.60837,,0,0,raster
+way,288044552,Cadillac Country Club,44.22728,-85.4693,,17,18,vector
+way,288044554,Eldorado,44.20491,-85.42102,,0,0,raster
+way,288044555,Fawn Crest Golf Course,44.23025,-85.95719,,0,0,raster
+way,288044556,Evergreen Resort,44.22834,-85.40876,,14,18,vector
+way,288534116,Petoskey - Bay View Country Club,45.38504,-84.91951,,5,0,partial
+way,288534118,Stoney Links Golf Course (closed),45.35253,-84.18641,,0,0,raster
+way,288534121,Wildwood Lake Golf Course,45.23912,-84.56409,,0,0,raster
+way,288630221,Red Arrow Golf Course,42.29246,-85.56937,,0,0,raster
+way,288727411,Elk Ridge Golf Club,45.08572,-84.18884,,0,0,raster
+way,288727413,Gaylord Country Club,45.03832,-84.78119,,17,18,vector
+way,288727417,Marsh Ridge Golf Course and Resort,44.96413,-84.67725,,1,1,raster
+way,288727420,The Loon Golf Resort,44.96571,-84.66766,,1,17,partial
+way,289002695,Ye Olde Country Club,44.49709,-84.63036,,0,0,raster
+way,289314040,Eagle Ridge Golf Club,44.55303,-83.71947,,18,18,vector
+way,289314043,Loggers Trace,44.64024,-83.31406,,0,0,raster
+way,289470369,Birch Pointe Golf Club,44.35191,-84.46661,,5,9,partial
+way,289470377,Lakeside Golf Course,44.11174,-84.43105,,21,9,vector
+way,289490420,Emerald Vale Golf Club,44.41432,-85.44718,,0,0,raster
+way,289661526,Bear Lake Highlands,44.41172,-86.14124,,0,0,raster
+way,289661527,Chestnut Hills,44.48717,-86.1486,,0,0,raster
+way,289672353,Lac Vieux Desert Golf Course,46.2876,-89.17293,,20,18,vector
+way,289755793,Shamrock Hills Golf Club,42.40096,-85.85382,,2,18,partial
+way,289765450,Chikaming Country Club,41.84316,-86.66277,,15,0,vector
+way,289800493,Chase Hammond Golf Club,43.30407,-86.20756,,0,0,raster
+way,289800512,Golden Sands Golf Course,43.69104,-86.46881,,0,0,raster
+way,289800516,Hemlock Golf Club,43.98693,-86.40242,,5,19,partial
+way,289800518,Lakeside Links,43.90082,-86.40822,,0,0,raster
+way,289800519,Lincoln Golf Course,43.34502,-86.28711,,0,0,raster
+way,289800530,Village Green Golf Club,43.40558,-85.85568,,15,18,vector
+way,289926030,Gladwin Heights Golf Course,43.97712,-84.51604,,0,0,raster
+way,289926038,Pohlcat,43.62646,-84.71615,,20,18,vector
+way,289926043,The Tamaracks Golf Course,44.11111,-84.78428,,6,18,partial
+way,289926046,White Deer Country Club,44.29505,-84.66589,,18,18,vector
+way,289965812,Kimberly Oaks Golf Club,43.30266,-84.16082,,0,0,raster
+way,289965813,Lapeer Country Club,43.0278,-83.37172,,0,0,raster
+way,289965823,Washakie Golf and RV Resort,43.21055,-83.21974,,0,0,raster
+way,290070926,Blythefield Country Club,43.06897,-85.58841,,18,18,vector
+way,290070927,Crystal Golf Course,43.2585,-84.95047,,0,0,raster
+way,290070929,Lake Monterey Golf Course,42.69391,-85.82182,,0,14,partial
+way,290070931,Sparta Moose Lodge Golf Course,43.17125,-85.66847,,2,0,raster
+way,290070936,Yankee Springs Golf Course,42.66546,-85.53094,,0,1,raster
+way,290222129,Park Shore Golf Course,41.90072,-86.00471,,0,0,raster
+way,290222131,Plym Park Golf Course,41.8436,-86.25634,,0,0,raster
+way,290464882,Cedar Creek Golf Course,42.27763,-85.27239,,2,3,raster
+way,290464888,Coldwater Golf Course,41.98152,-85.0206,,5,18,partial
+way,290464891,Greenbriar Golf Course,42.08254,-84.13695,,0,0,raster
+way,290464892,Gull Lake View East,42.36714,-85.3817,,21,18,vector
+way,290464893,Gull Lake View West,42.36565,-85.39152,,14,18,vector
+way,290464894,Hillsdale Country Club,41.89502,-84.61458,,0,0,raster
+way,290464895,Irish Hills Golf Club,42.05199,-84.15403,,0,0,raster
+way,290464896,Irish Hills Shore Golf Course,42.04875,-84.29977,,0,1,raster
+way,290464932,Saint Joe Valley Golf Course,41.9142,-85.47173,,15,12,vector
+way,290625084,Calderone Farms Golf Club,42.29889,-84.23383,,1,18,partial
+way,290625096,Hankerd Hills Golf Course,42.39291,-84.33531,,24,18,vector
+way,290625130,Waterloo Golf Course,42.33926,-84.19526,,0,0,raster
+way,290766520,Deme Acres Golf Course,41.89162,-83.69971,,0,18,partial
+way,290766541,Crooked Creek Golf Course,41.79696,-83.67272,,18,18,vector
+way,290830133,Eastern Hills Golf Club,42.33636,-85.51053,,3,18,partial
+way,291034487,Prairie Creek Golf Course,42.83236,-84.56227,,0,0,raster
+way,291034489,The Fields Golf Course,43.31219,-84.60281,,4,3,partial
+way,291034490,The Kingsley Club,44.60273,-85.55874,,4,18,partial
+way,291227554,Maple Brook Golf Course,42.5761,-84.82775,,2,0,raster
+way,291486114,Gogebic Country Club,46.46713,-90.11918,,2,0,raster
+way,291678452,Ubly Heights Golf & Country Club,43.71556,-82.92431,,0,0,raster
+way,291678453,Woodland Hills Golf Club,43.42772,-82.84189,,0,0,raster
+way,291704817,Oak Ridge Golf Club,42.72742,-82.75238,,40,18,vector
+way,292927530,Blue Heron Golf Course,46.22893,-85.87371,,0,0,raster
+way,292927531,Boulder Creek Golf Course,46.52609,-90.06807,,0,0,raster
+way,292927532,Calumet Golf Club,47.21087,-88.44898,,0,0,raster
+way,292927533,Drummond Island Golf Club,46.01051,-83.74327,,0,0,raster
+way,292927535,Gentz's Homestead Golf Course,46.45588,-87.3398,,2,6,raster
+way,292927536,Hiawatha Sportsman’s Club Golf Course,46.10458,-85.4519,,0,0,raster
+way,292927537,Irish Oaks Golf Course and Driving Range,45.83243,-87.05784,,1,5,raster
+way,292927538,Keweenaw Mountain Lodge Golf Course,47.45774,-87.91193,,9,0,vector
+way,292927539,L'Anse Golf Club,46.71974,-88.434,,0,0,raster
+way,292927540,Les Cheneaux Golf Course,45.9911,-84.3824,,0,0,raster
+way,292927541,Nahma Golf Course,45.837,-86.66368,,0,0,raster
+way,292927542,Northern Michigan University Golf Course,46.48138,-87.29213,,0,0,raster
+way,292927543,Ontonagon Golf Club,46.87327,-89.28956,,1,9,partial
+way,292927544,Perttu's Big Spruce Golf Course,46.57292,-89.1834,,0,0,raster
+way,292927545,Pictured Rocks Golf Club,46.42715,-86.58472,,19,18,vector
+way,292927546,Garden Golf Club,45.79691,-86.56125,,0,0,raster
+way,292927547,Wild Bluff Golf Course,46.41787,-84.60847,,0,18,partial
+way,292927548,Wyandotte Hills Golf Course,46.88926,-88.87178,,0,0,raster
+way,292961977,Bay Harbor Golf Club,45.36231,-85.06477,,18,17,vector
+way,292961978,Birchwood Farms Golf & Country Club,45.46717,-85.03849,,3,27,partial
+way,292961979,Chestnut Valley Golf Course,45.48021,-84.88273,,1,0,raster
+way,292961980,Crooked Tree Golf Club,45.35635,-85.0163,,20,20,vector
+way,292961981,Harbor Point Golf Club,45.4358,-85.01068,,1,0,raster
+way,292961982,Hidden River Golf and Casting Club,45.50409,-84.75109,,21,18,vector
+way,292961984,Mackinaw Club,45.7165,-84.7369,,0,0,raster
+way,292961985,True North Golf Club,45.51492,-84.99082,,23,18,vector
+way,292961986,Wequetonsing Golf Club,45.4356,-84.96206,,0,0,raster
+way,292961987,Wilderness Golf Course,45.7081,-84.83071,,0,0,raster
+way,292966231,Black Lake Golf Course,45.41749,-84.27299,,12,13,vector
+way,292966236,Cheboygan Golf & Country Club,45.65887,-84.51634,,4,0,partial
+way,292966241,Indian River Golf Club,45.42309,-84.61704,,5,18,partial
+way,292966246,Mullett Lake Country Club,45.56939,-84.51287,,0,9,partial
+way,292970745,Rogers City Country Club,45.34829,-83.75918,,0,18,partial
+way,292976652,Lawton Golf Club,42.17689,-85.84697,,1,0,raster
+way,292981227,Charlevoix Municipal Golf Course,45.32543,-85.24347,,1,0,raster
+way,292981228,Dunmaglas Golf Club,45.30142,-85.15438,,12,0,vector
+way,292981229,Heatherwoods Golf Course,45.34143,-85.21554,,23,0,vector
+way,292981230,Mallard Golf Club,45.14327,-85.17168,,0,0,raster
+way,292981231,Walloon Lake Country Club,45.28795,-84.9532,,0,0,raster
+way,292981232,Ye Nyne Old Holles Golf Course,45.24416,-85.10531,,4,9,partial
+way,292985062,Black Bear Golf Club,45.18011,-84.64036,,16,18,vector
+way,292985063,Black Forest at Wilderness Valley,44.86586,-84.80413,,0,0,raster
+way,292985064,Green Trees Golf Course,45.03192,-84.73785,,0,0,raster
+way,292985067,Michaywe Pines,44.93861,-84.62749,,0,0,raster
+way,292985068,The Classic,45.03212,-84.6572,,0,18,partial
+way,292985069,The Lakes Golf Course,44.94539,-84.64692,,0,0,raster
+way,292985070,The Natural at Beaver Creek Resort,44.9608,-84.71313,,0,0,raster
+way,292985071,The Tribute,45.04632,-84.65198,,0,0,raster
+way,292985072,Treetops,45.09976,-84.59714,,7,11,partial
+way,292985074,Wilderness Valley,44.87675,-84.79618,,0,0,raster
+way,292986579,Alpena Golf Club,45.09053,-83.46931,,18,18,vector
+way,292986580,Greenbush Golf Course,44.60094,-83.31845,,0,0,raster
+way,292986581,Lost Lake Woods Golf Course,44.7846,-83.41224,,0,0,raster
+way,292986582,Monarch Ridge Golf Course,44.83336,-83.41752,,0,0,raster
+way,292986585,White Pine National,44.75281,-83.51378,,0,0,raster
+way,293134257,Antrim Dells,45.17027,-85.35449,,0,18,partial
+way,293134258,Bay Meadows Golf Course,44.77094,-85.67782,,14,18,vector
+way,293134260,Cedar Valley Golf Club,44.79116,-84.03253,,0,0,raster
+way,293134261,Centennial Farm Golf Club,44.99448,-85.16041,,0,0,raster
+way,293134262,Deer Run Golf at Lakes of the North,44.91667,-84.86703,,15,18,vector
+way,293134263,Fairview Hills Golf Club,44.72132,-84.11433,,0,0,raster
+way,293134264,Grandview Golf Club,44.76012,-85.07924,,4,18,partial
+way,293134265,Grayling Country Club,44.65441,-84.71416,,18,18,vector
+way,293134266,Hawk's Eye Golf Course,44.9589,-85.15004,,1,0,raster
+way,293134268,Schuss Mountain Golf Course,44.93431,-85.13204,,0,0,raster
+way,293134269,Sundance,45.02492,-85.34495,,20,18,vector
+way,293134270,The Chief Golf Course,44.96274,-85.18317,,12,17,vector
+way,293134271,The Legend Golf Course,44.94341,-85.18511,,0,0,raster
+way,293134272,Timber Wolf Golf Club,44.70809,-85.05836,,0,0,raster
+way,293134273,Torch,45.02697,-85.33704,,6,18,partial
+way,293134274,Twin Birch Golf Course,44.73797,-85.14892,,0,0,raster
+way,293247441,"""The Old Course"" at Sugar Loaf",44.91337,-85.81096,,16,18,vector
+way,293247442,Arcadia Bluffs Golf Club,44.45663,-86.24196,,14,18,vector
+way,293247443,Betsie Valley,44.51663,-85.9976,,16,15,vector
+way,293247444,Birch Valley Golf Course,43.90573,-85.14252,,0,0,raster
+way,293247445,Antioch Hills Golf Club,44.40077,-85.69076,,14,18,vector
+way,293247446,Burning Oak Country Club,44.39797,-84.67848,,0,0,raster
+way,293247447,Caberfae Peaks,44.24699,-85.72817,,0,0,raster
+way,293247448,The Retreat,44.17769,-86.29501,,16,18,vector
+way,293247449,Champion Hill Golf Course,44.6395,-86.03127,,6,18,partial
+way,293247450,Crystal Downs Country Club,44.70064,-86.22664,,18,18,vector
+way,293247451,Crystal Lake Golf Club,44.63896,-86.0716,,16,18,vector
+way,293247452,The Revenge,44.18227,-86.314,,2,0,raster
+way,293247453,Devil's Knob Golf Course,44.04368,-84.7121,,1,9,partial
+way,293247454,Eagle Glen Golf Course,43.8521,-84.8749,,16,18,vector
+way,293247455,Firefly Golf Links,43.87763,-84.75866,,0,0,raster
+way,293247456,Hawk Golf Course,44.30466,-85.4195,,0,0,raster
+way,293247457,Knoll View Golf Course,44.04464,-83.76531,,0,0,raster
+way,293247458,Lakewood on the Green,44.19565,-85.48908,,0,0,raster
+way,293247459,Manitou Passage Golf Club,44.90985,-85.82429,,15,0,vector
+way,293247460,Missaukee Golf Club,44.26288,-85.22018,,0,0,raster
+way,293247461,Mountain Flowers,44.91867,-85.96606,,1,0,raster
+way,293247463,Pine River Golf Club,43.98662,-83.89704,,18,17,vector
+way,293247464,Pine View Highlands,44.29496,-84.7385,,17,18,vector
+way,293247465,Red Hawk Golf Club,44.35468,-83.53828,,17,18,vector
+way,293247466,Rifle River Golf Course,44.06517,-84.02995,,0,0,raster
+way,293247468,Snow Snake Golf Course,43.96299,-84.78275,,4,18,partial
+way,293247469,Spring Valley Golf Course,43.87646,-85.45524,,0,0,raster
+way,293247470,Tawas Creek Golf Club,44.30913,-83.53474,,0,0,raster
+way,293247471,The Heathlands,44.34046,-86.21043,,0,2,raster
+way,293247472,The Leelanau Club at Bahle Farms,44.93631,-85.66927,,22,18,vector
+way,293247473,The Quest Golf Club,44.32406,-84.78652,,19,18,vector
+way,293247474,The Rose Golf Course,44.08064,-85.41496,,0,0,raster
+way,293247475,Tustin Trails Golf Course,44.10755,-85.44685,,0,0,raster
+way,293247476,Wicker Hills Golf Club,44.45006,-83.8178,,0,0,raster
+way,293249043,Apple Valley Golf Course,44.30791,-84.20886,,2,18,partial
+way,293249044,Edgewood Greens Golf Course,44.27164,-83.92604,,0,0,raster
+way,293249045,The Dream GC,44.28335,-84.33753,,27,29,vector
+way,293249046,The Nightmare GC,44.26949,-84.35289,,19,18,vector
+way,293249047,West Branch Country Club,44.28127,-84.21889,,15,18,vector
+way,293254867,Driftwood Golf Course,43.82279,-86.37586,,0,0,raster
+way,293254868,Grand View Golf Course,43.54796,-86.38155,,5,18,partial
+way,293254869,Intimidator Golf Course,43.79946,-85.65356,,0,0,raster
+way,293254870,Northwood Golf Course,43.50391,-85.99447,,0,0,raster
+way,293254871,Oceana Golf Club,43.64165,-86.36316,,4,18,partial
+way,293254872,Pilgrim's Run Golf Course,43.3486,-85.57379,,11,18,vector
+way,293254873,Summer Breeze Par Three Golf Course,43.44787,-85.94303,,0,0,raster
+way,293254874,Thoroughbred Golf Club,43.53681,-86.36271,,0,1,raster
+way,293254875,Waters Edge Golf Course,43.47515,-85.92744,,2,0,raster
+way,293323695,Clear Lake Golf Club,43.68163,-85.38244,,0,0,raster
+way,293323696,Falcon Head Golf Club,43.65957,-85.47633,,0,0,raster
+way,293323697,Katke Golf Course,43.68404,-85.50303,,17,18,vector
+way,293323698,Saint Ives,43.60629,-85.30755,,25,18,vector
+way,293323699,The Highlands,43.60482,-85.32089,,0,0,raster
+way,293323700,The Pines,43.5727,-85.29305,,0,0,raster
+way,293323701,Tullymore,43.56424,-85.32502,,18,18,vector
+way,293336798,Bucks Run Golf Club,43.62113,-84.62092,,23,36,vector
+way,293336799,Maple Creek Golf Club,43.51629,-84.68243,,0,0,raster
+way,293336800,Mount Pleasant Country Club,43.62217,-84.77541,,0,0,raster
+way,293336801,Pleasant Hills Golf Course,43.54786,-84.75959,,17,18,vector
+way,293336802,Riverwood Resort,43.58744,-84.82672,,0,0,raster
+way,293379095,Apple Mountain Golf Course,43.47421,-84.10653,,17,18,vector
+way,293379099,Beech Hollow Golf Course,43.51738,-84.04669,,23,18,vector
+way,293379100,County Line Golf Course,43.44141,-83.70362,,0,0,raster
+way,293379101,Crooked Creek Golf Course,43.40992,-84.09477,,19,18,vector
+way,293379105,Forest View Golf Center,43.73091,-84.23451,,0,0,raster
+way,293379111,Green Acres Golf Course,43.32963,-83.82421,,0,0,raster
+way,293379112,Gully Golf Course,43.79393,-84.36064,,0,0,raster
+way,293379115,Maple Hill Golf Club,43.4108,-84.17547,,0,0,raster
+way,293379123,Mueller's Valley View Farm Golf Course,43.40559,-84.10742,,19,18,vector
+way,293379125,Pleasant View Golf Course,43.45638,-83.96208,,0,0,raster
+way,293379127,Sandy Ridge Golf Course,43.66335,-84.15801,,42,18,vector
+way,293379128,Swan Valley Golf Course,43.42374,-84.10059,,18,18,vector
+way,293379129,The Fortress Golf Course,43.32468,-83.7502,,17,18,vector
+way,293379130,The Sawmill Golf Club,43.45825,-84.06234,,23,18,vector
+way,293379131,Twin Bridges Golf Course,43.37178,-84.35722,,0,0,raster
+way,293379132,Twin Brooks Golf Course,43.19758,-84.13621,,0,0,raster
+way,293379133,Twin Oaks Golf Club,43.52775,-84.04447,,28,0,vector
+way,293379134,White Birch Hills Golf Course,43.63314,-84.04098,,0,18,partial
+way,293487668,Arrowhead Golf Club,43.48621,-83.37599,,0,0,raster
+way,293487669,Bird Creek Golf Club,44.0168,-82.99317,,5,0,partial
+way,293487670,Caseville Golf Course,43.95606,-83.2306,,0,9,partial
+way,293487671,Century Oaks Golf Club,43.82094,-83.16686,,0,9,partial
+way,293487672,EMS Links Golf Course,43.35441,-82.90863,,0,0,raster
+way,293487674,Hidden Oaks Golf Course,43.4166,-84.63034,,0,0,raster
+way,293487675,Lakeview Hills Golf Resort - North Course,43.27101,-82.55598,,0,0,raster
+way,293487676,Lakeview Hills Golf Resort - South Course,43.2636,-82.55922,,0,0,raster
+way,293487678,North Star Golf Course,43.22285,-84.5696,,0,0,raster
+way,293487679,Pine River Country Club,43.37938,-84.6817,,0,0,raster
+way,293487680,Pointe Aux Barques Golf Course,44.05803,-82.94726,,0,0,raster
+way,293487682,Ridge Golf Course,43.40035,-84.472,,0,0,raster
+way,293487685,Rolling Hills,43.61362,-83.16995,,0,0,raster
+way,293487687,Scenic Golf and Country Club,43.89024,-83.31573,,4,18,partial
+way,293487690,Sherwood on the Hill Golf Course,43.66119,-83.24764,,0,9,partial
+way,293487693,The Timbers Golf Club,43.31433,-83.66356,,20,18,vector
+way,293487696,Vassar Golf and Country Club,43.40602,-83.56143,,7,0,partial
+way,293487698,Verona Hills Golf Club,43.80914,-82.89132,,20,18,vector
+way,293487702,Willow Springs Golf and Country Club,43.31202,-83.4952,,6,0,partial
+way,293494449,Brookside Golf and Grill,43.27323,-85.30727,,0,0,raster
+way,293494450,Edmore Golf Course,43.41089,-85.05638,,6,9,partial
+way,293494451,Glenkerry Golf Course,43.17775,-85.22788,,0,0,raster
+way,293494452,Hickory Hills Golf Course,43.12243,-85.07097,,0,0,raster
+way,293494453,Holland Lake Golf Course,43.23158,-85.05364,,0,0,raster
+way,293494455,Whitefish Lake Golf Club,43.32678,-85.52694,,0,0,raster
+way,293536317,Bent Pine Golf Club,43.33701,-86.30429,,0,0,raster
+way,293536318,Eagle Island Golf Course,43.24324,-86.15169,,1,0,raster
+way,293536319,Hickory Knoll Golf Course,43.39843,-86.32005,,0,0,raster
+way,293536320,Moss Ridge,43.23091,-85.91672,,0,0,raster
+way,293536322,Muskegon Country Club,43.21017,-86.3127,,17,18,vector
+way,293536324,Old Channel Trail,43.4106,-86.43025,,0,0,raster
+way,293536328,Ravenna Creeks Golf Course,43.19685,-85.95626,,0,0,raster
+way,293536329,Stonegate Golf Club,43.33108,-86.13985,,0,0,raster
+way,293536333,University Park Golf Course,43.24831,-86.19136,,0,0,raster
+way,293536335,Westwind Golf Course,43.16762,-86.17607,,0,0,raster
+way,293536338,White Lake Golf Club,43.35775,-86.40723,,0,0,raster
+way,293594757,Cedar Chase Golf Club,43.22768,-85.48064,,18,0,vector
+way,293594758,North Kent Golf Course,43.16734,-85.50533,,2,18,partial
+way,293637034,Alpine Golf Club,43.07981,-85.68635,,1,0,raster
+way,293637035,Arrowhead Golf Club,43.00515,-85.36712,,0,0,raster
+way,293637038,Briarwood Golf Club,42.79375,-85.59752,,30,18,vector
+way,293637040,Cascade Hills Country Club,42.95198,-85.57537,,8,18,partial
+way,293637041,Egypt Valley Country Club,43.0114,-85.49819,,34,36,vector
+way,293637043,Gracewil Country Club,43.03741,-85.7339,,0,0,raster
+way,293637047,Ironwood Golf Course,42.84518,-85.75709,,0,0,raster
+way,293637049,Maple Hill Golf Course,42.86524,-85.74571,,0,0,raster
+way,293637050,Mines Golf Course,42.96031,-85.71658,,0,19,partial
+way,293637051,Quail Ridge Golf Club,42.90503,-85.46246,,27,25,vector
+way,293637052,Railside Golf Club,42.82503,-85.73176,,3,18,partial
+way,293637054,Saskatoon Golf Club,42.79815,-85.44332,,4,37,partial
+way,293637055,Scott Lake Country Club,43.08004,-85.6431,,0,0,raster
+way,293637058,Thousand Oaks Golf Club,43.03825,-85.56216,,19,18,vector
+way,293637059,Tyler Creek Golf Club,42.8023,-85.33437,,0,0,raster
+way,293718183,Crestview Golf Course,42.88142,-86.02606,,0,0,raster
+way,293718184,American Dunes Golf Club,42.99552,-86.21136,,0,18,partial
+way,293718186,Pigeon Creek Golf Course,42.95375,-86.09032,,1,18,partial
+way,293718187,Sand Creek Golf Club,43.01823,-85.83473,,0,0,raster
+way,293718188,Spring Lake Country Club,43.08609,-86.16853,,18,18,vector
+way,293718189,Terra Verde Golf Course,43.0696,-86.07912,,0,18,partial
+way,293718190,Wallinwood Springs Golf Club,42.92241,-85.79974,,18,18,vector
+way,293718191,West Ottawa Golf Course,42.87889,-86.12591,,0,0,raster
+way,293718192,Western Greens Country Club,43.02024,-85.84429,,0,0,raster
+way,293718193,Wuskowhan Players Club,42.89878,-86.17804,,10,18,vector
+way,293751869,Bennington Golf Club,42.9301,-84.21809,,0,0,raster
+way,293751870,Chardell Golf Course,42.8403,-84.47356,,0,0,raster
+way,293751871,Chippewa Hills Country Club,42.92356,-84.08081,,0,0,raster
+way,293751872,Corunna Hills Golf Course,42.97828,-84.13395,,0,0,raster
+way,293751873,Dutch Hollow Golf Club,42.92154,-84.0001,,0,0,raster
+way,293751874,Falcon Golf Course,42.77983,-84.49548,,8,11,partial
+way,293751875,Glenbrier Golf Course,42.78894,-84.24073,,7,18,partial
+way,293751876,Hawk Hollow Golf Course,42.79604,-84.47067,,25,26,vector
+way,293751877,Holiday Meadows Golf Course,42.95861,-83.96051,,7,9,partial
+way,293751878,Huckleberry Creek Golf Course,43.02673,-84.84227,,9,0,vector
+way,293751880,Iron Horse Golf Course,43.05328,-85.26901,,0,9,partial
+way,293751883,Portland Country Club,42.91868,-84.88417,,0,0,raster
+way,293751884,Shadow Ridge Golf Club,42.96835,-85.04466,,0,0,raster
+way,293751885,The Emerald Golf Course,43.11001,-84.56697,,17,18,vector
+way,293751893,Willow Wood Golf Course,42.8131,-84.87934,,0,0,raster
+way,293751895,Willowbrook Golf Club,42.818,-83.94924,,0,0,raster
+way,293751896,Woodside Golf Course,42.80581,-84.52765,,6,12,partial
+way,293781535,Beechwood Greens Golf Club,43.13221,-83.69843,,10,9,vector
+way,293781536,Briar Ridge Golf Course,43.14312,-83.90082,,1,0,raster
+way,293781538,Clio Country Club,43.19554,-83.7837,,17,18,vector
+way,293781540,Fenton Farms Golf Club,42.84704,-83.73412,,4,18,partial
+way,293781542,Flushing Valley Golf Club,43.05873,-83.82693,,3,18,partial
+way,293781543,Genesee Valley Meadows Golf Course,42.96871,-83.79055,,0,0,raster
+way,293781545,Spring Meadows Country Club,42.82995,-83.77487,,13,18,vector
+way,293781546,Vienna Greens Country Club,43.17291,-83.68747,,2,0,raster
+way,293875802,Cedar River Golf Course,44.94943,-85.14797,,0,0,raster
+way,293902538,Atlas Valley Country Club,42.94319,-83.53963,,0,0,raster
+way,293902546,Davison Country Club,43.0016,-83.51896,,8,18,partial
+way,293902547,Flint Golf Club,42.99304,-83.66824,,6,18,partial
+way,293902548,Goodrich Country Club,42.91394,-83.51357,,5,18,partial
+way,293902551,IMA Brookwood Golf Club,43.03739,-83.58994,,6,18,partial
+way,293902552,Kearsley Lake Golf Course,43.05943,-83.62663,,0,0,raster
+way,293902553,Loch Lomond Golf Course,42.954,-83.64911,,0,0,raster
+way,293902562,Pierce Park Golf & Events,43.01459,-83.65957,,0,0,raster
+way,293902567,River Forest Golf Course,43.02564,-83.75223,,0,0,raster
+way,293902568,Southmoor Golf Course (former),42.96433,-83.65704,,0,0,raster
+way,293902572,Sugarbush Golf Club,43.04273,-83.46388,,7,18,partial
+way,293917776,Arcadia Hills Golf Club,43.08114,-83.19691,,0,0,raster
+way,293917777,Castle Creek Golf Club,43.10159,-83.14329,,0,0,raster
+way,293917778,Greenbrier Golf Club,43.30209,-83.31214,,4,18,partial
+way,293917779,Hadley Acres Golf Club,42.94344,-83.39835,,6,18,partial
+way,293941304,Belle River Golf and Country Club,42.9278,-82.81817,,0,0,raster
+way,293941305,Black River Golf Club,43.00669,-82.4705,,22,2,vector
+way,293941306,Deer View Golf Course,43.11425,-82.9615,,0,0,raster
+way,293941307,Golden Hawk Golf Club,42.74757,-82.70685,,3,18,partial
+way,293941310,Marysville Golf Course,42.89223,-82.47978,,0,0,raster
+way,293941311,Michigan Meadows Golf Course,42.75817,-82.72869,,0,0,raster
+way,293941312,Middle Channel Golf & Country Club,42.6075,-82.58641,,0,0,raster
+way,293941313,Pine Shore Golf Course,42.81464,-82.49491,,0,0,raster
+way,293941314,Port Huron Elks Lodge Golf Course,43.00359,-82.48132,,21,16,vector
+way,293941316,Willow Ridge Golf Club,43.01278,-82.47046,,1,0,raster
+way,294002106,Bruce Hills Golf Course,42.82737,-83.04831,,17,18,vector
+way,294002108,Greystone Golf Club,42.79412,-83.05351,,21,18,vector
+way,294002109,Heather Hills Golf Course,42.87727,-83.08853,,2,19,partial
+way,294002110,Pine Valley Golf & Country Club,42.79318,-82.95969,,26,27,vector
+way,294002113,Timberwood Golf Club,42.78449,-82.8696,,21,18,vector
+way,294028778,Burning Tree Country Club,42.64793,-82.88256,,1,1,raster
+way,294028780,Hickory Hollow Golf Course,42.66002,-82.88463,,5,19,partial
+way,294028781,Salt River Golf Course,42.68218,-82.76956,,0,0,raster
+way,294028782,Scalawags Golf Club,42.68076,-82.84813,,0,0,raster
+way,294028783,Sycamore Hills Golf Club,42.65513,-82.88451,,28,16,vector
+way,294041944,Fern Hill Golf Club,42.58129,-82.94128,,1,0,raster
+way,294041945,Gowanie Country Club,42.5856,-82.86072,,19,18,vector
+way,294041946,Maple Lane Golf Club,42.5428,-83.01181,,42,54,vector
+way,294041947,Plum Brook Golf Course,42.57065,-82.99417,,21,18,vector
+way,294041948,Rammler Golf Club,42.57825,-82.98255,,21,18,vector
+way,294041950,Warfield Greens Golf Club,42.54746,-82.95927,,2,9,partial
+way,294106829,Blackheath Golf Club,42.7516,-83.13159,,2,23,partial
+way,294106832,Mulberry Hills Golf Course,42.86021,-83.20872,,20,18,vector
+way,294106833,Oxford Hills Country Club,42.80585,-83.24342,,17,18,vector
+way,294106835,Stony Creek Metropark Golf Course,42.72052,-83.10296,,23,18,vector
+way,294106836,The Myth,42.77257,-83.15773,,22,18,vector
+way,294106837,The Wyndgate,42.73513,-83.17693,,11,18,vector
+way,294106839,Westwynd Golf Course,42.732,-83.19052,,19,18,vector
+way,294239607,Birmingham Country Club,42.5336,-83.23703,,20,16,vector
+way,294239608,Bloomfield Hills Country Club,42.5853,-83.25743,,12,18,vector
+way,294239612,Great Oaks Country Club,42.68936,-83.1532,,13,18,vector
+way,294239613,Hampton Golf and Country Club,42.64484,-83.11918,,11,9,vector
+way,294239614,Lincoln Hills Golf Course,42.53423,-83.24774,,2,2,raster
+way,294239617,Pine Trace Golf Club,42.62501,-83.19202,,11,18,vector
+way,294239618,Plum Hollow Country Club,42.45347,-83.26426,,6,14,partial
+way,294239620,Sanctuary Lake Golf Course,42.619,-83.10092,,3,18,partial
+way,294239621,Somerset Golf Course,42.55672,-83.17904,,8,9,partial
+way,294239622,Springdale Park and Golf Course,42.56347,-83.21411,,10,9,vector
+way,294239623,Stonycroft Hills Club,42.59004,-83.24344,,0,9,partial
+way,294269488,Bay Pointe Golf Club,42.58144,-83.44243,,19,18,vector
+way,294269491,Edgewood Country Club,42.58862,-83.45368,,7,18,partial
+way,294269496,Fountains Golf & Banquet,42.72242,-83.38904,,11,18,vector
+way,294269497,Franklin Hills Country Club,42.51829,-83.32534,,17,18,vector
+way,294269498,Glen Oaks Golf Course,42.51828,-83.35337,,19,1,vector
+way,294269504,Knollwood Country Club,42.54751,-83.32661,,15,18,vector
+way,294269507,Pine Knob Golf Club,42.74112,-83.36991,,6,27,partial
+way,294269508,Pine Lake Country Club,42.59704,-83.34263,,1,19,partial
+way,294269509,Pontiac Country Club,42.63585,-83.37668,,8,21,partial
+way,294269510,Silver Lake Golf Course,42.68455,-83.33761,,4,10,partial
+way,294269511,Twin Beach Country Club,42.572,-83.43238,,0,9,partial
+way,294269512,Union Lake Golf Course,42.60189,-83.45144,,6,9,partial
+way,294342564,Bramblewood Country Club,42.83291,-83.65912,,0,0,raster
+way,294342570,Cattails Golf Club,42.44375,-83.61584,,9,18,vector
+way,294342573,Glenlore Golf Course,42.5888,-83.51709,,0,0,raster
+way,294342578,Heather Highlands Golf Club,42.7769,-83.51933,,2,0,raster
+way,294342580,Highland Hills Golf Course,42.68328,-83.58554,,0,0,raster
+way,294342593,Lyon Oaks Golf Course,42.51509,-83.5697,,17,18,vector
+way,294342601,River Bank Golf Course,42.45893,-83.59768,,1,0,raster
+way,294342604,Shepherd's Hollow,42.73013,-83.46067,,19,19,vector
+way,294342605,The Links of Novi,42.46073,-83.54345,,0,0,raster
+way,294342606,Walnut Creek Country Club,42.47618,-83.56973,,9,18,vector
+way,294393520,Chemung Hills Golf Club,42.60429,-83.88786,,20,18,vector
+way,294393521,Coyote Preserve Golf Club,42.76089,-83.77679,,5,18,partial
+way,294393522,Dunham Hills Golf Club,42.65338,-83.68998,,7,18,partial
+way,294393524,Faulkwood Shores Golf Club,42.59422,-83.85512,,27,0,vector
+way,294393526,Hartland Glen Golf Club,42.62652,-83.71056,,0,0,raster
+way,294393527,Hawk Meadows,42.65959,-83.92817,,10,18,vector
+way,294393528,Hunters Ridge Golf Course,42.71919,-83.97298,,1,18,partial
+way,294393530,Ironwood Golf Club,42.62715,-83.81996,,15,0,vector
+way,294393531,Majestic at Lake Walden Golf Course,42.65125,-83.76686,,27,18,vector
+way,294393532,Tyrone Hills Golf Club,42.73318,-83.76892,,7,0,partial
+way,294435504,Huron Meadows Golf Course,42.49079,-83.7746,,16,18,vector
+way,294435505,Kensington Metropark Golf Course,42.52021,-83.675,,18,0,vector
+way,294435506,Lakelands Golf and Country Club,42.47307,-83.83901,,17,18,vector
+way,294435510,Rush Lake Hills Golf Club,42.48009,-83.8828,,17,18,vector
+way,294435511,The Golf Club at Mt. Brighton,42.53869,-83.80458,,0,0,raster
+way,294435512,Timber Trace Golf Club,42.47612,-83.99355,,0,18,partial
+way,294441749,Bonnie View Golf Course,42.56389,-84.62706,,1,0,raster
+way,294441750,Branson Bay Golf Course,42.57636,-84.58879,,0,0,raster
+way,294441751,Brookshire Golf Club,42.69454,-84.2892,,7,22,partial
+way,294441752,Chisholm Hills Country Club,42.65531,-84.56929,,0,0,raster
+way,294441753,College Fields Golf Club,42.69732,-84.45501,,7,18,partial
+way,294441754,Eagle View Golf Club,42.55222,-84.44831,,0,0,raster
+way,294441756,Lake o' the Hills Golf Course,42.75112,-84.4234,,1,9,partial
+way,294441757,Meridian Sun Golf Club,42.75109,-84.38401,,0,18,partial
+way,294441758,Oak Lane Golf Club,42.67782,-84.17145,,0,0,raster
+way,294441759,Wheatfield Valley Golf Course,42.66969,-84.29706,,0,0,raster
+way,294441760,Willow Creek Golf Course,42.44299,-84.23165,,0,0,raster
+way,294442378,Fox Woods Golf Course,42.45594,-84.64942,,0,0,raster
+way,294442379,Ledge Meadows Golf Course,42.75906,-84.80229,,0,0,raster
+way,294442380,Olivet Country Club,42.46918,-84.88796,,0,0,raster
+way,294778884,Angels Crossing Golf Course,42.10748,-85.54338,,13,18,vector
+way,294778885,Cheshire Hills Golf Course,42.43926,-85.92308,,1,0,raster
+way,294778887,Diamond Springs Golf Course,42.67019,-85.88899,,2,18,partial
+way,294778888,Gun Ridge Golf Course,42.63924,-85.3724,,0,0,raster
+way,294778890,Hastings Country Club,42.66457,-85.29817,,4,0,partial
+way,294778891,Indian Run Golf Club,42.18321,-85.49875,,5,18,partial
+way,294778892,Jeptha Lake Golf Course,42.34401,-86.00608,,0,0,raster
+way,294778893,Lake Doster Golf Club,42.44029,-85.55652,,2,18,partial
+way,294778894,LYNX Golf Course & Grill,42.48192,-85.76044,,0,18,partial
+way,294778895,Maple Hills Golf Course,42.38734,-85.311,,10,9,vector
+way,294778896,Olde Mill Golf Club,42.08828,-85.66631,,7,18,partial
+way,294778897,Orchard Hills Golf Course,42.60511,-85.61724,,0,0,raster
+way,294778898,Prairiewood Golf Course,42.44767,-85.71259,,0,0,raster
+way,294778899,Ravines Golf Club,42.6715,-86.14797,,0,0,raster
+way,294778901,States Golf Club,42.11772,-85.58841,,0,18,partial
+way,294778902,The Links At Rolling Meadows,42.75072,-86.12353,,0,0,raster
+way,294778903,Winding Creek Golf Club,42.76325,-85.99465,,1,2,raster
+way,294819111,Cedar Farms Golf Club,42.24836,-85.24167,,0,0,raster
+way,294819112,Custer Greens Golf Course,42.34332,-85.29528,,0,0,raster
+way,294819113,Duck Lake Country Club,42.38365,-84.7751,,7,0,partial
+way,294819116,Marshall Country Club,42.18077,-84.97223,,0,0,raster
+way,294819117,Marywood Country Club,42.38479,-85.16848,,0,0,raster
+way,294819120,Riverside Country Club,42.29851,-85.18447,,25,9,vector
+way,294819125,The Medalist Golf Club,42.3558,-84.9974,,17,18,vector
+way,294819126,Turtle Creek Golf Course,42.11441,-85.12088,,0,0,raster
+way,294857657,Burr Oak Golf Club,42.28477,-84.5955,,0,0,raster
+way,294857660,Clark Lake Golf Course,42.10162,-84.32012,,0,0,raster
+way,294857665,Country Club of Jackson,42.1847,-84.44956,,0,0,raster
+way,294857676,Deer Run Golf Club,42.09763,-84.47063,,0,0,raster
+way,294857679,Ella Sharp Park Golf Course,42.21472,-84.42406,,0,0,raster
+way,294857694,Gauss' Green Valley Golf Course,42.18666,-84.31177,,0,0,raster
+way,294857697,Grande Golf Club,42.18262,-84.37519,,2,11,partial
+way,294857705,Hills Heart of the Lakes Golf Course,42.11476,-84.24132,,19,18,vector
+way,294857717,Pine Hollow Golf Club,42.28055,-84.32773,,0,0,raster
+way,294882605,Ann Arbor Country Club,42.34302,-83.82077,,1,0,raster
+way,294882606,Barton Hills Country Club,42.32613,-83.76677,,17,18,vector
+way,294882607,Brookside Golf Course,42.19504,-83.78871,,23,18,vector
+way,294882608,Georgetown Country Club,42.24283,-83.72675,,0,9,partial
+way,294882609,Inverness Country Club,42.38175,-84.0048,,1,9,partial
+way,294882610,Lake Forest Golf Club,42.23183,-83.78885,,17,18,vector
+way,294882611,Links at Whitmore Lake Golf Course,42.39784,-83.74326,,0,0,raster
+way,294882616,Rustic Glen Golf Course,42.11212,-83.89487,,18,18,vector
+way,294882617,Stonebridge Golf Club,42.21421,-83.76838,,12,15,vector
+way,294895578,Brae-Burn Golf Club,42.38844,-83.55624,,13,0,vector
+way,294895579,Fox Hills Country Club,42.36232,-83.59633,,16,34,vector
+way,294895580,Green Oaks Golf Course,42.25957,-83.57337,,15,18,vector
+way,294895581,Hickory Creek Golf Course,42.32397,-83.5521,,19,18,vector
+way,294895582,Pine View Golf Course,42.20569,-83.62832,,9,9,vector
+way,294895583,Salem Hills Golf Club,42.40141,-83.59412,,18,18,vector
+way,294904314,Hilltop Golf Course,42.36831,-83.50499,,0,0,raster
+way,294904315,Idylwyld Golf Club,42.40043,-83.39505,,13,18,vector
+way,294904316,Inkster Valley Golf Course,42.29346,-83.3328,,0,0,raster
+way,294904322,Pine Creek Golf Course,42.19962,-83.53546,,0,0,raster
+way,294904324,Mack Mayfield Municipal Golf Course,42.30687,-83.3545,,10,9,vector
+way,294904325,Whispering Willows Golf Course,42.43607,-83.40918,,5,18,partial
+way,294968618,Belle Isle Practice Center,42.34777,-82.96271,,5,0,partial
+way,294968619,Country Club of Detroit,42.41758,-82.89662,,0,18,partial
+way,294968622,Glenhurst Golf Course,42.41045,-83.29088,,19,18,vector
+way,294968623,Grosse Ile Golf & Country Club,42.12228,-83.16427,,18,17,vector
+way,294968625,Riverview Highlands Golf Course,42.16878,-83.20532,,21,29,vector
+way,294968626,Southwinds Golf Course,42.20329,-83.21336,,1,18,partial
+way,294968627,Taylor Meadows Golf Course,42.25887,-83.28274,,5,18,partial
+way,294968628,Warren Valley Golf Course,42.34664,-83.29998,,2,0,raster
+way,294968632,Water's Edge Golf Course,42.12432,-83.17079,,9,10,vector
+way,294968633,West Shore Golf & Country Club,42.141,-83.16357,,22,18,vector
+way,294968634,Western Golf and Country Club,42.39461,-83.30026,,6,18,partial
+way,294968635,Wyandotte Shores Golf Course,42.19136,-83.15355,,0,9,partial
+way,294999849,Carleton Glen Golf Club,42.07154,-83.37569,,27,18,vector
+way,294999850,Cherrywood Golf Club,41.75865,-83.66102,,4,9,partial
+way,294999851,Dundee Golf Club,41.94891,-83.63339,,0,0,raster
+way,294999852,Green Meadows Golf Course,41.91922,-83.49745,,23,0,vector
+way,294999853,Maple Grove Golf Course,41.73107,-83.61752,,0,0,raster
+way,294999855,Quarry Ridge Golf Center,41.72567,-83.74167,,4,27,partial
+way,294999858,Sandy Creek Golf Course,41.98133,-83.42665,,0,0,raster
+way,294999859,Tamaron Country Club,41.73015,-83.59756,,1,0,raster
+way,294999860,The Legacy Golf Club,41.79227,-83.73782,,17,18,vector
+way,294999861,Big Al's Greens & Grille,42.01197,-83.27756,,0,0,raster
+way,294999862,Wesburn Golf Club,42.07095,-83.27379,,5,18,partial
+way,294999864,Whiteford Valley Golf Club,41.76753,-83.73952,,30,61,vector
+way,295015859,Devils Lake Golf Course,42.00808,-84.28099,,4,18,partial
+way,295015862,Shaffer's Evergreen Golf Course,41.87284,-84.33729,,0,0,raster
+way,295015863,Wolf Creek Golf Club,41.92391,-84.10989,,16,18,vector
+way,295015864,Woodlawn Golf Club,41.85067,-84.02294,,0,0,raster
+way,295029096,Bronson Golf Club,41.82989,-85.23705,,0,0,raster
+way,295029100,Iyopawa Island Golf Course,41.81411,-84.97369,,25,0,vector
+way,295029102,Klinger Lake Country Club,41.79476,-85.54678,,10,18,vector
+way,295029104,Lake Leann Golf Course,42.04761,-84.42901,,0,0,raster
+way,295029107,Pine View Golf Course,42.03771,-85.65956,,7,18,partial
+way,295029110,Quincy Golf Course,41.92318,-84.89006,,0,0,raster
+way,295029111,White Oaks Golf Club,41.89422,-84.65593,,0,0,raster
+way,295042643,Brookwood Golf Course,41.82149,-86.33921,,2,18,partial
+way,295042647,Diamond Lake Golf Club,41.9093,-85.99032,,5,9,partial
+way,295042648,Dowagiac Elk's Golf Course,41.97904,-86.10185,,0,0,raster
+way,295042649,Hampshire Country Club,41.91931,-86.13967,,28,36,vector
+way,295042652,Pipestone Creek Golf Course,42.03806,-86.29522,,6,18,partial
+way,295042654,Signal Point Country Club,41.80814,-86.27072,,1,9,partial
+way,295042655,Spruce Ridge Golf Club,41.98031,-86.08031,,0,0,raster
+way,295089150,Berrien Hills Golf Club,42.08458,-86.47189,,0,0,raster
+way,295089151,Blossom Trails Golf Club,42.10853,-86.42135,,2,18,partial
+way,295089153,Harbor Shores,42.12457,-86.4619,,11,18,vector
+way,295089154,Lake Michigan Hills Golf Club,42.16075,-86.36471,,3,18,partial
+way,295089155,Lost Dunes,41.95252,-86.56241,,50,18,vector
+way,295089156,Milan Creek Golf Course,41.94472,-86.50282,,0,0,raster
+way,295089157,Pebblewood Golf Course,41.93924,-86.5364,,0,0,raster
+way,295089158,Whittaker Woods Golf Club,41.76539,-86.76285,,15,18,vector
+way,295146901,Arthur Hills,45.49674,-84.9274,,9,20,vector
+way,295146903,Caro Golf Club,43.49561,-83.38087,,0,0,raster
+way,295146904,Donald Ross Memorial,45.49287,-84.93028,,10,16,vector
+way,295146906,Masterpiece,45.03213,-84.59987,,18,18,vector
+way,295146907,The Alpine,45.15545,-84.95457,,12,15,vector
+way,295146908,The Heather,45.47299,-84.93021,,13,15,vector
+way,295146909,The Monument,45.15857,-84.95582,,9,7,vector
+way,295146910,The Highlands - Moor Course,45.47904,-84.92379,,7,21,partial
+way,295281477,Garland Lodge & Resort,44.81202,-84.30955,,28,72,vector
+way,322247658,Springfield Oaks Golf Course,42.74781,-83.53311,,3,18,partial
+way,330393329,Downing Farms Golf Course,42.42201,-83.60338,,16,18,vector
+way,330686943,Nahma Golf Course,45.85397,-86.63547,,0,0,raster
+way,339254010,Chippewa Banks Disc Golf Course,43.60953,-84.25371,,7,7,partial
+way,353274008,Cedar Glen Golf Club,42.70207,-82.74278,,14,18,vector
+way,368859184,Disc Golf Course,42.34547,-82.97479,,0,0,raster
+way,374753139,Hawk Ridge Golf Course,44.57304,-84.69359,,0,0,raster
+way,376820528,Black Locust Disc Golf Course,42.52665,-83.63311,,0,0,raster
+way,378698160,Timber Ridge Golf Club,42.77961,-84.43137,,13,18,vector
+way,406475725,Indian Springs Metropark Golf Course,42.69775,-83.48806,,6,18,partial
+way,415178399,Disc Golf Course,42.12033,-83.37591,,17,18,vector
+way,431328580,Rolling Meadows Golf Course,42.37851,-83.6979,,2,18,partial
+way,438153192,Grizzly Oaks Disc Golf Course,42.67824,-83.20563,,2,0,raster
+way,445109175,Pleasant Meadows,43.89656,-84.97611,,0,0,raster
+way,448891386,Copper Hills Golf and Country Club,42.82042,-83.18793,,6,18,partial
+way,448959508,Devil's Ridge Golf Club,42.8804,-83.27318,,14,19,vector
+way,458265562,Rolling Hills County Park Disc Golf,42.17677,-83.65285,,0,0,raster
+way,468374130,Disc Golf,42.22805,-84.92516,,0,0,raster
+way,480761267,Grande Golf Club,42.19336,-84.37502,,1,7,raster
+way,506982179,Bonnie Brook Golf Range,42.4414,-83.27571,,0,0,raster
+way,548260932,Stonebridge Golf Club,42.21047,-83.76451,,4,3,partial
+way,561595451,Jackson College Disc Golf,42.16197,-84.40326,,0,0,raster
+way,615799003,Sandy Pebbles Golf Course,47.3149,-88.41273,,9,0,vector
+way,623889475,Forest Dunes Golf Resort,44.5909,-84.52963,,7,36,partial
+way,640897717,Rippling Rapids Golf Club,45.52654,-84.35803,,9,0,vector
+way,676149839,South Course,42.42189,-83.12435,,19,21,vector
+way,685643707,Maple Ridge Golf,45.50401,-84.77829,,0,0,raster
+way,689721721,Springbrook Golf Club,45.24849,-84.85245,,0,0,raster
+way,693998226,Arcadia Bluffs - South Course,44.43749,-86.21377,,92,18,vector
+way,696959902,Northport Creek,45.13484,-85.62226,,6,9,partial
+way,711867672,Cherry Creek Golf Club,42.67681,-83.02189,,24,18,vector
+way,721021017,Timberstone,45.83811,-88.07709,,18,18,vector
+way,733348572,Moose Ridge Golf Course,42.47141,-83.71208,,17,18,vector
+way,734239146,Gull Lake Country Club,42.39957,-85.42808,,15,18,vector
+way,759049169,Crestview Golf Club,42.382,-85.60358,,0,0,raster
+way,793004749,Metamora Country Club,42.90482,-83.32466,,7,18,partial
+way,832446580,Lakeland Hills Golf Course,42.23032,-84.29339,,13,18,vector
+way,849975317,Stoatin Brae Golf Club,42.3619,-85.32642,,0,18,partial
+way,865406679,Holly Meadows Golf Course,43.03577,-82.93414,,1,0,raster
+way,865719888,Rattle Run Golf Course,42.79265,-82.60196,,12,18,vector
+way,963071710,Evergreen Golf Course,43.00853,-86.03817,,0,0,raster
+way,1023306741,White Lake Oaks Golf Course,42.65365,-83.45082,,3,18,partial
+way,1080346406,The Fox Golf Club,44.38282,-84.70648,,0,0,raster
+way,1101853841,Woodside Meadows Golf Course,42.1558,-83.3116,,12,18,vector
+way,1158062168,Bello Woods Golf Course,42.66994,-82.87218,,0,0,raster
+way,1168367054,Sage Run Golf Course,45.77366,-87.41157,,0,0,raster
+way,1209496922,Old Club Par 3 Course,42.54045,-82.66795,,0,0,raster
+way,1218634825,Practice Area,45.41299,-84.26537,,4,0,partial
+way,1218634826,The Little Course,45.41598,-84.26546,,13,14,vector
+way,1232212530,Iron Links Golf Course,42.60584,-84.53784,,0,0,raster
+way,1300560983,Kaufman Golf Course,42.87704,-85.69373,,5,17,partial
+way,1300580527,The Falls at Barber Creek,43.25455,-85.71704,,0,0,raster
+way,1314716906,Driving Range,46.45753,-87.33769,,0,3,raster
+way,1335270086,High Pointe Golf Club,44.75717,-85.42933,,7,20,partial
+way,1390531875,Colonial Heritage 9 Course,43.69727,-86.38628,,0,15,partial
+way,1452447239,Interlochen Golf Course,44.66389,-85.79309,,5,18,partial
+way,1481662679,The Dunes Club,41.81586,-86.7136,,5,9,partial
+relation,909401,Detroit Golf Club,42.4246,-83.12451,,3,3,partial
+relation,1201364,Belvedere Golf Club,45.29349,-85.26796,,6,18,partial
+relation,1540464,Rackham Golf Course,42.47779,-83.16793,,7,18,partial
+relation,3316985,Indian Hills Golf Course,42.72135,-84.44003,,1,9,partial
+relation,3485460,Carrington Golf Club,41.91914,-83.45353,,14,19,vector
+relation,3534199,Sauganash,41.91262,-85.63151,,0,0,raster
+relation,3534224,Leslie Park Golf Course,42.30749,-83.72255,,16,18,vector
+relation,3535487,The Gailes,44.50694,-83.3485,,6,23,partial
+relation,3535488,The Serradella,44.49971,-83.34572,,30,30,vector
+relation,3547898,Farmington Hills Golf Club,42.48429,-83.41699,,12,18,vector
+relation,3808877,George Young Golf Course,46.05278,-88.52482,,0,0,raster
+relation,3863884,Mystic Creek Golf Club,42.58805,-83.62443,,0,0,raster
+relation,3906656,Terrace Bluff Golf Course,45.82126,-87.06555,,2,13,partial
+relation,3910991,The Links at Crystal Lake,42.62017,-83.3048,,7,18,partial
+relation,3919765,Bushwood Golf Course,42.40573,-83.43927,,0,1,raster
+relation,3919766,Northville Hills Golf Club,42.40177,-83.49558,,30,18,vector
+relation,3921631,Island Hills Golf Club,41.90473,-85.49815,,3,18,partial
+relation,4595157,Beacon Hill Golf and Banquet Facility,42.60459,-83.53088,,0,0,raster
+relation,4595158,Brentwood Golf Club and Banquet Center,42.61956,-83.52702,,18,18,vector
+relation,4598011,Saint Clair Shores Golf Club,42.53597,-82.89771,,24,18,vector
+relation,4600721,Links at Gateway,42.26344,-83.36017,,10,18,vector
+relation,5268271,Watermark Country Club,42.93094,-85.53341,,18,0,vector
+relation,5279229,The Royal,43.57092,-85.27872,,1,0,raster
+relation,5646232,Prestwick Village Golf Club,42.63182,-83.63472,,17,18,vector
+relation,5805268,Glacier Club Golf Course,42.73199,-83.04406,,5,18,partial
+relation,6010396,Huntmore Golf Club,42.59576,-83.76351,,8,18,partial
+relation,6011051,Stonewater Country Club,42.83375,-85.62528,,24,18,vector
+relation,6022884,Glen Eagle Golf Club,42.87902,-85.81262,,15,18,vector
+relation,6024133,Oakhurst Golf & Country Club,42.74187,-83.33843,,8,18,partial
+relation,6028936,Pheasant Run Golf Club,42.29599,-83.50662,,24,27,vector
+relation,6031909,Fellows Creek Municipal Golf Club,42.28885,-83.43561,,21,19,vector
+relation,6031937,The Captain's Club at Woodfield,42.87598,-83.58227,,9,18,vector
+relation,6106365,Brookwood Golf Club,42.69118,-83.17442,,9,9,vector
+relation,6108818,Paint Creek Country Club,42.79694,-83.29222,,0,0,raster
+relation,6109495,Travis Pointe Country Club,42.21406,-83.78526,,19,0,vector
+relation,6141278,Broadmoor Country Club,42.82125,-85.53439,,0,0,raster
+relation,6799850,Bandemer Park Disc Golf,42.29957,-83.74362,,0,0,raster
+relation,8273976,Selfridge ANGB Golf Course,42.60299,-82.81078,,16,19,vector
+relation,8443784,Mountain Ridge,44.52304,-86.00859,,21,21,vector
+relation,9285467,TPC Michigan,42.30669,-83.20422,,87,1,vector
+relation,9389563,North Course,42.42501,-83.1246,,13,12,vector
+relation,9586027,El Dorado Golf Course,42.60207,-84.49375,,18,18,vector
+relation,9646157,Boulder Pointe Golf Club,42.837,-83.2801,,9,27,vector
+relation,10580845,Gateway Lodge Golf Course,46.1629,-89.2107,,0,0,raster
+relation,11096628,Copper Creek Golf Course,42.50346,-83.4234,,6,0,partial
+relation,11133840,Thunder Bay Resort,45.06191,-83.88387,,0,18,partial
+relation,11228724,Whispering Pines Golf Club,42.45524,-83.892,,18,18,vector
+relation,11762694,The Links at Bowen Lake,43.23334,-85.34231,,0,0,raster
+relation,11845365,Rolling Hills Golf Club,43.05113,-83.35358,,0,0,raster
+relation,11983569,Boulder Creek Golf Club,43.07023,-85.56313,,2,18,partial
+relation,12300845,Benona Shores Golf Course,43.58285,-86.50356,,47,18,vector
+relation,12558245,Indian Lake Hills Golf Course,41.99349,-86.22538,,25,27,vector
+relation,12591529,Red Oaks Golf Course,42.51454,-83.09967,,0,9,partial
+relation,12684814,Point O' Woods,42.1383,-86.35697,,17,18,vector
+relation,13120888,Twin Lakes Golf & Swim Club,42.76634,-83.12838,,1,13,partial
+relation,13328534,Warwick Hills Golf & Country Club,42.89578,-83.59681,,19,18,vector
+relation,13434414,St. Clair Golf Club,42.85375,-82.48145,,22,19,vector
+relation,13531846,Fieldstone Golf Club,42.68726,-83.25651,,20,18,vector
+relation,13557578,Indianwood Golf & Country Club,42.78292,-83.27821,,28,36,vector
+relation,13892528,Tanglewood Golf Club,42.45599,-83.58178,,14,0,vector
+relation,14006407,Shenandoah Country Club,42.56106,-83.39743,,17,18,vector
+relation,14031738,Orchard Lake Country Club,42.58547,-83.38867,,17,18,vector
+relation,14045164,Forest Lake Country Club,42.59829,-83.29434,,21,18,vector
+relation,14048126,Wabeek Country Club,42.57722,-83.31835,,17,18,vector
+relation,14059170,Oakland Hills Country Club,42.54536,-83.27166,,35,36,vector
+relation,14070869,Heathers Club of Bloomfield,42.60791,-83.23414,,0,9,partial
+relation,15056812,Swartz Creek Golf Course,42.99266,-83.71819,,0,0,raster
+relation,16048768,The Orchards Golf Club,42.75043,-83.03865,,21,18,vector
+relation,16255040,Knollwood Country Club - West Course,41.75868,-86.20027,,0,6,raster
+relation,16347138,Owosso Country Club,43.06186,-84.18072,,4,18,partial
+relation,16701594,Copper Ridge Golf Club,42.99444,-83.53594,,4,18,partial
+relation,18610148,The Crown Golf Club,44.72554,-85.68791,,9,18,vector
+relation,18783398,Spruce Run Golf Course,44.7768,-85.48624,,20,24,vector
+relation,18783399,The Wolverine Golf Course,44.78182,-85.47945,,11,12,vector
+relation,18783400,The Bear Golf Course,44.78096,-85.47575,,24,18,vector
+relation,18783761,Clearbrook,42.66449,-86.18269,,14,18,vector
+relation,19023281,The Pines Golf Course,43.64413,-84.99255,,0,0,raster
+relation,19033375,Sugar Springs Golf Club,44.13491,-84.43962,,8,0,partial
+relation,19135249,Fox Run Country Club,44.59268,-84.72444,,0,0,raster
+relation,19187400,Colonial Golf Course,43.69741,-86.38524,,0,12,partial
+relation,19228400,The Jewel of Grand Blanc,42.92662,-83.6043,,0,0,raster
+relation,19244524,Oak Pointe Country Club,42.53337,-83.85835,,21,18,vector
+relation,19767646,River's Edge Golf Club,44.97623,-83.57254,,0,72,partial
+relation,20020921,LochenHeath Golf Club,44.80316,-85.48679,,3,18,partial
+relation,20704662,Indian Trails Golf Course,42.91567,-85.62374,,12,4,vector
