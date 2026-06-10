@@ -49,27 +49,41 @@ def valid_json(path):
 
 def cmd_prefetch(only_idx=None):
     os.makedirs(CACHE, exist_ok=True)
+    osm_t = os.environ.get('OSM_QUERY_TIMEOUT', '22')
+    missing = []
     for i, (s, w, n, e) in enumerate(CHUNKS):
         if only_idx is not None and i != only_idx:
             continue
         bf = f'{CACHE}/boundaries_chunk_{i}.json'
         if valid_json(bf) is None:
             open(bf, 'w').write('')
-            q = (f'[out:json][timeout:22];(way["leisure"="golf_course"]({s},{w},{n},{e});'
+            q = (f'[out:json][timeout:{osm_t}];(way["leisure"="golf_course"]({s},{w},{n},{e});'
                  f'relation["leisure"="golf_course"]({s},{w},{n},{e}););out geom;')
-            d = overpass_q(q, bf)
-            print(f'boundaries chunk {i}: {len(d.get("elements", []))}', flush=True)
-            time.sleep(2)
+            try:
+                d = overpass_q(q, bf)
+                print(f'boundaries chunk {i}: {len(d.get("elements", []))}', flush=True)
+            except Exception as ex:
+                print(f'boundaries chunk {i} FAILED: {ex}', flush=True)
+                missing.append(bf)
+            time.sleep(3)
         cf = f'{CACHE}/golf_chunk_{i}.json'
         d = valid_json(cf)
         if d is not None:
             print(f'golf chunk {i} cached ({len(d["elements"])} ways)', flush=True)
             continue
         open(cf, 'w').write('')
-        q = f'[out:json][timeout:22];way["golf"~"^({GOLF_RE})$"]({s},{w},{n},{e});out geom;'
-        d = overpass_q(q, cf)
-        print(f'golf chunk {i}: {len(d.get("elements", []))} ways', flush=True)
-        time.sleep(2)
+        q = f'[out:json][timeout:{osm_t}];way["golf"~"^({GOLF_RE})$"]({s},{w},{n},{e});out geom;'
+        try:
+            d = overpass_q(q, cf)
+            print(f'golf chunk {i}: {len(d.get("elements", []))} ways', flush=True)
+        except Exception as ex:
+            print(f'golf chunk {i} FAILED: {ex}', flush=True)
+            missing.append(cf)
+        time.sleep(3)
+    if missing:
+        print(f'{len(missing)} chunk(s) still missing - rerun prefetch', flush=True)
+        sys.exit(1)
+    print('prefetch complete', flush=True)
 
 def course_bbox(rings, pad=0.06):
     lats = [p['lat'] for r in rings for p in r]

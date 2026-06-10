@@ -49,8 +49,9 @@ def overpass(query, out_file):
                 return json.load(f)
         except Exception:
             pass
+    curl_t = os.environ.get('OVERPASS_CURL_TIMEOUT', '25')
     for url in OVERPASS:
-        subprocess.run(['curl', '-s', '-m', '25', '-A', UA, url,
+        subprocess.run(['curl', '-s', '-m', curl_t, '-A', UA, url,
                         '--data-urlencode', f'data={query}', '-o', out_file])
         try:
             with open(out_file) as f:

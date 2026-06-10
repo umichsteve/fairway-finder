@@ -9,7 +9,7 @@ env:
 jobs:
   prefetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,11 +18,17 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Prefetch statewide OSM data + spatial join
         working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '90'
+          OVERPASS_CURL_TIMEOUT: '120'
         run: |
-          for i in 0 1 2 3 4 5 6 7; do
-            python batch_pipeline.py prefetch $i
-            sleep 8
+          ok=0
+          for attempt in 1 2 3 4 5 6; do
+            if python batch_pipeline.py prefetch; then ok=1; break; fi
+            echo "prefetch incomplete — cooldown before retry $attempt"
+            sleep 75
           done
+          [ "$ok" = "1" ] || exit 1
           python batch_pipeline.py join
       - uses: actions/upload-artifact@v4
         with:
@@ -52,6 +58,8 @@ jobs:
         run: sleep $(( 45 * ${{ matrix.shard }} ))
       - name: Render shard ${{ matrix.shard }} of 8
         working-directory: michigan
+        env:
+          OVERPASS_CURL_TIMEOUT: '60'
         run: python batch_pipeline.py render --shard ${{ matrix.shard }} 8
       - uses: actions/upload-artifact@v4
         with:
