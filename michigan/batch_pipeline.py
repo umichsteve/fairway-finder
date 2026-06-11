@@ -180,11 +180,13 @@ def render_one(jpath):
     course_map, holes = P.render(f'{CACHE}/{slug}', d['course']['name'], d['city'], bbox, rings, feats)
     strip = P.scorecard_strip(d['course']['name'], d['city'], holes)
     card = np.vstack([course_map, strip])
-    cv2.imwrite(out_file, card)
+    if not cv2.imwrite(out_file, card) or not os.path.exists(out_file):
+        raise RuntimeError(f'card write failed: {out_file}')
     return f'ok features={len(feats)} holes={len(holes)}'
 
 def cmd_render(shard=None, total=None, names=None, limit=None):
     os.makedirs(CARDS, exist_ok=True)
+    os.makedirs(CACHE, exist_ok=True)
     files = sorted(os.listdir(JOINED))
     if names:
         wanted = [re.sub(r'[^a-z0-9]+', '-', x.strip().lower()).strip('-') for x in names.split(',')]
@@ -193,17 +195,24 @@ def cmd_render(shard=None, total=None, names=None, limit=None):
         files = [f for i, f in enumerate(files) if i % total == shard]
     if limit:
         files = files[:limit]
-    done = fail = 0
+    done = fail = streak = 0
     for f in files:
         try:
             r = render_one(f'{JOINED}/{f}')
             done += 1
+            streak = 0
             print(f'[{done}/{len(files)}] {f[:-5]}: {r}', flush=True)
         except Exception as ex:
             fail += 1
+            streak += 1
             print(f'FAILED {f[:-5]}: {ex}', flush=True)
+            if streak >= 6:
+                print('6 consecutive failures - aborting shard (systemic problem)', flush=True)
+                sys.exit(1)
         time.sleep(1)
     print(f'shard done: {done} ok, {fail} failed', flush=True)
+    if done == 0:
+        sys.exit(1)
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()

@@ -63,6 +63,9 @@ def overpass(query, out_file):
 def fetch(url, out_file):
     if os.path.exists(out_file) and os.path.getsize(out_file) > 20000:
         return
+    d = os.path.dirname(out_file)
+    if d:
+        os.makedirs(d, exist_ok=True)
     subprocess.run(['curl', '-s', '-m', '30', '-A', UA, url, '-o', out_file])
 
 def rings_of(el):

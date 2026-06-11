@@ -66,6 +66,7 @@ jobs:
           name: cards-shard-${{ matrix.shard }}
           path: michigan/cards/
           retention-days: 7
+          if-no-files-found: error
 
   merge:
     needs: render
