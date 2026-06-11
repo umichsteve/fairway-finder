@@ -1,0 +1,48 @@
+name: Extract US course stats
+
+on:
+  workflow_dispatch:
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Inventory (retried, cached)
+        working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '60'
+          OVERPASS_CURL_TIMEOUT: '90'
+        run: |
+          ok=0
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if python national_pipeline.py inventory; then ok=1; break; fi
+            sleep 75
+          done
+          [ "$ok" = "1" ] || exit 1
+      - name: Prefetch hole + boundary cells (retried)
+        working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '60'
+          OVERPASS_CURL_TIMEOUT: '120'
+        run: |
+          ok=0
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if python extract_stats.py prefetch; then ok=1; break; fi
+            sleep 75
+          done
+          [ "$ok" = "1" ] || exit 1
+      - name: Compute stats
+        working-directory: michigan
+        run: python extract_stats.py compute
+      - uses: actions/upload-artifact@v4
+        with:
+          name: us-course-stats
+          path: michigan/stats_us.csv
+          retention-days: 30
+          if-no-files-found: error
