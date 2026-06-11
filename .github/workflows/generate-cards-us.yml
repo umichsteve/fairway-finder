@@ -1,0 +1,128 @@
+name: Generate US course cards
+
+on:
+  workflow_dispatch:
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Inventory all states (retried)
+        working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '60'
+          OVERPASS_CURL_TIMEOUT: '90'
+        run: |
+          ok=0
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if python national_pipeline.py inventory; then ok=1; break; fi
+            echo "inventory incomplete — cooldown before retry $attempt"
+            sleep 75
+          done
+          [ "$ok" = "1" ] || exit 1
+      - name: Plan render units
+        id: plan
+        working-directory: michigan
+        run: |
+          python national_pipeline.py plan | tee plan.log
+          grep '^matrix=' plan.log >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: us-plan
+          path: |
+            michigan/us_manifest.json
+            michigan/units.json
+          retention-days: 7
+          if-no-files-found: error
+
+  render:
+    needs: inventory
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix: ${{ fromJSON(needs.inventory.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: us-plan
+          path: michigan/
+      - name: Prefetch unit ${{ matrix.unit }} (retried)
+        working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '60'
+          OVERPASS_CURL_TIMEOUT: '120'
+        run: |
+          ok=0
+          for attempt in 1 2 3 4 5 6; do
+            if python national_pipeline.py prefetch --unit ${{ matrix.unit }}; then ok=1; break; fi
+            echo "prefetch incomplete — cooldown before retry $attempt"
+            sleep 75
+          done
+          [ "$ok" = "1" ] || exit 1
+      - name: Join unit ${{ matrix.unit }}
+        working-directory: michigan
+        run: python national_pipeline.py join --unit ${{ matrix.unit }}
+      - name: Render unit ${{ matrix.unit }}
+        working-directory: michigan
+        env:
+          OVERPASS_CURL_TIMEOUT: '60'
+        run: python national_pipeline.py render --unit ${{ matrix.unit }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cards-unit-${{ matrix.unit }}
+          path: michigan/cards_us/
+          retention-days: 7
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: meta-unit-${{ matrix.unit }}
+          path: michigan/unit_*_courses.csv
+          retention-days: 7
+          if-no-files-found: error
+
+  merge:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cards-unit-*
+          merge-multiple: true
+          path: cards/
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: meta-unit-*
+          merge-multiple: true
+          path: meta/
+      - name: Merge course metadata
+        run: |
+          ls cards | wc -l
+          first=$(ls meta/unit_*_courses.csv | head -1)
+          head -1 "$first" > courses_us_tiered.csv
+          for f in meta/unit_*_courses.csv; do tail -n +2 "$f" >> courses_us_tiered.csv; done
+          wc -l courses_us_tiered.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: us-cards
+          path: cards/
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: us-course-data
+          path: courses_us_tiered.csv
+          retention-days: 30

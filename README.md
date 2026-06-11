@@ -46,6 +46,25 @@ python batch_pipeline.py render --shard 0 8 --limit 5
 Everything is idempotent: existing cards are skipped, corrupt cache files are
 re-fetched, so re-running a failed shard just fills the gaps.
 
+## National run (all 50 states + DC)
+
+`generate-cards-us.yml` scales the same pipeline to ~15–20k US courses:
+inventory job (51 state queries) → dynamic matrix of ~55 render units
+(≤320 courses each, 16 parallel, every unit resumable and fail-fast) →
+merge job emitting `us-cards` (all PNGs) + `courses_us_tiered.csv`.
+
+```bash
+gh workflow run generate-cards-us.yml -R umichsteve/fairway-finder
+```
+
+Wall time ~10–14 h. **Cost warning:** this consumes ~120 runner-hours.
+On a private repo that's ~7,200 Actions minutes (over the Pro quota —
+overage billed). Make the repo public first and minutes are free:
+
+```bash
+gh repo edit umichsteve/fairway-finder --visibility public --accept-visibility-change-consequences
+```
+
 ## Attribution
 
 - Aerial imagery: USDA NAIP via USGS (public domain)
