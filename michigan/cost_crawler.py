@@ -118,6 +118,8 @@ def find_rates_link(html, base):
     scored = []
     for href in links:
         low = href.lower()
+        if MEMBERSHIP_URL.search(low):  # never follow a membership/season/event page as "rates"
+            continue
         score = sum(2 if h in low else 0 for h in RATES_HINTS)
         if score:
             scored.append((score, urllib.parse.urljoin(base, href)))
@@ -173,6 +175,11 @@ def text_of(html):
 EIGHTEEN = re.compile(r'\b(18|eighteen)\b', re.I)
 DISCOUNT = re.compile(r'\b(jr|junior|sr|senior|twilight|military|kid|child|youth|league|9\s*hole|nine)\b',
                       re.I)
+# membership/season pricing must never be read as a green fee
+MEMBERSHIP = re.compile(r'\b(member|membership|season\s*pass|annual|initiation|dues|'
+                        r'/year|per\s*year|/yr|punch\s*card|gift\s*card|wedding|banquet|'
+                        r'event|outing\s*package|stay\s*and\s*play|monthly)\b', re.I)
+MEMBERSHIP_URL = re.compile(r'(member|season-pass|annual|dues|gift|wedding|banquet|package)', re.I)
 
 def _median(xs):
     s = sorted(xs)
@@ -191,26 +198,26 @@ def extract_fee(html):
     eighteen, contextual = [], []
     for m in PRICE_RE.finditer(text):
         val = int(m.group(1))
-        if val < 8 or val > 1500:
+        if val < 8 or val > 600:  # >$600 single green fee is implausible outside a handful of resorts
             continue
-        window = text[max(0, m.start() - 70):m.end() + 40]
+        # labels precede the price in fee tables; look mostly behind to avoid bleed from the next row
+        window = text[max(0, m.start() - 75):m.end() + 12]
         if not FEE_CONTEXT.search(window):
             continue
-        is_discount = bool(DISCOUNT.search(window))
+        if MEMBERSHIP.search(window):  # membership/season/event pricing — not a round
+            continue
+        if DISCOUNT.search(window):
+            continue
         contextual.append(val)
-        if EIGHTEEN.search(window) and not is_discount:
+        if EIGHTEEN.search(window):
             eighteen.append(val)
 
     pool = eighteen or contextual
     if not pool:
-        loose = [int(m.group(1)) for m in PRICE_RE.finditer(text)
-                 if 15 <= int(m.group(1)) <= 400]
-        if not loose:
-            return None, 'no-price'
-        return max(loose[: max(1, len(loose) * 9 // 10)]), 'low'
+        return None, 'no-fee'  # no clean green-fee signal; do NOT guess (was the 'low' bug source)
 
     med = _median(pool)
-    clean = [v for v in pool if v <= 4 * med] or pool  # drop membership/junk spikes
+    clean = [v for v in pool if v <= 3 * med] or pool  # drop residual junk spikes
     conf = 'high' if eighteen else 'medium'
     return max(clean), conf
 
