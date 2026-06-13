@@ -1,0 +1,44 @@
+name: Crawl course green fees
+
+on:
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'Comma-separated states (blank = all)'
+        required: false
+        default: 'MI'
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Inventory course websites
+        working-directory: michigan
+        env:
+          OSM_QUERY_TIMEOUT: '60'
+        run: |
+          ARG=""
+          [ -n "${{ inputs.states }}" ] && ARG="--states ${{ inputs.states }}"
+          for attempt in 1 2 3 4 5; do
+            if python cost_crawler.py inventory $ARG; then break; fi
+            sleep 60
+          done
+      - name: Crawl rates pages (1 req/s, robots-respecting)
+        working-directory: michigan
+        run: python cost_crawler.py crawl
+      - name: Extract fees -> cost bands
+        working-directory: michigan
+        run: python cost_crawler.py extract
+      - uses: actions/upload-artifact@v4
+        with:
+          name: us-cost-data
+          path: |
+            michigan/cost_us.csv
+            michigan/course_sites.csv
+          retention-days: 30
+          if-no-files-found: error
