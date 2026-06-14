@@ -4,28 +4,44 @@ on:
   workflow_dispatch:
     inputs:
       states:
-        description: 'Comma-separated states (blank = all)'
+        description: 'Comma-separated states (blank = all 51)'
         required: false
-        default: 'MI'
+        default: ''
 
 jobs:
-  crawl:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    outputs:
+      matrix: ${{ steps.set.outputs.matrix }}
+    steps:
+      - id: set
+        run: |
+          if [ -n "${{ inputs.states }}" ]; then
+            STATES="${{ inputs.states }}"
+          else
+            STATES="AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY,DC"
+          fi
+          JSON=$(echo "$STATES" | tr ',' '\n' | grep . | jq -R . | jq -cs .)
+          echo "matrix={\"state\":$JSON}" >> "$GITHUB_OUTPUT"
+
+  crawl:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Inventory course websites
+      - name: Inventory course websites (one state)
         working-directory: michigan
-        env:
-          OSM_QUERY_TIMEOUT: '60'
         run: |
-          ARG=""
-          [ -n "${{ inputs.states }}" ] && ARG="--states ${{ inputs.states }}"
           for attempt in 1 2 3 4 5; do
-            if python cost_crawler.py inventory $ARG; then break; fi
+            if python cost_crawler.py inventory --states ${{ matrix.state }}; then break; fi
             sleep 60
           done
       - name: Crawl rates pages (1 req/s, robots-respecting)
@@ -34,20 +50,41 @@ jobs:
       - name: Extract fees -> cost bands
         working-directory: michigan
         run: python cost_crawler.py extract
-      - name: Archive fetched pages (lets us re-tune extraction without re-crawling)
-        working-directory: michigan
-        run: tar czf cost_pages.tar.gz -C cost_cache . || echo "no cache dir"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cost-${{ matrix.state }}
+          path: michigan/cost_us.csv
+          retention-days: 14
+          if-no-files-found: warn
+
+  merge:
+    needs: crawl
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: cost-*
+          path: parts
+      - name: Concatenate per-state CSVs
+        run: |
+          mkdir -p out
+          first=1
+          for f in parts/cost-*/cost_us.csv; do
+            [ -f "$f" ] || continue
+            if [ $first -eq 1 ]; then
+              cat "$f" > out/cost_us.csv
+              first=0
+            else
+              tail -n +2 "$f" >> out/cost_us.csv
+            fi
+          done
+          echo "national rows: $(($(wc -l < out/cost_us.csv) - 1))"
+          echo "--- states ---"
+          awk -F, 'NR>1{s[$3]++} END{for(k in s) print k": "s[k]}' out/cost_us.csv | sort
       - uses: actions/upload-artifact@v4
         with:
           name: us-cost-data
-          path: |
-            michigan/cost_us.csv
-            michigan/course_sites.csv
+          path: out/cost_us.csv
           retention-days: 30
           if-no-files-found: error
-      - uses: actions/upload-artifact@v4
-        with:
-          name: us-cost-pages
-          path: michigan/cost_pages.tar.gz
-          retention-days: 14
-          if-no-files-found: warn
